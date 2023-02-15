@@ -3,7 +3,7 @@ const clickUpbt = e => {
     const divMove = e.target.closest(".bloque");/*el div que contiene el boton que pulsamos*/
     const divPrev = divMove.previousElementSibling;/*el div anterior*/
     if(! divPrev) return;/* si es un error, osea no hay anterior para*/
-    divMove.parentNode.insertBefore(divPrev, divMove);/*Intercambio los 2 div*/
+    divMove.parentNode.insertBefore(divMove, divPrev);/*Intercambio los 2 div*/
     console.log(divMove);
     console.log(divPrev);
 };
@@ -18,7 +18,7 @@ const clickDownbt = e => {
     console.log(divMove);
     console.log(divpost);
 
-
+    
 
 };
 
